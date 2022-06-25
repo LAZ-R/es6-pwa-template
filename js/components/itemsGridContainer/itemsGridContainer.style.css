@@ -1,0 +1,11 @@
+@import url("../../../css/root.css");
+
+/* Put here any 'footer.component.js' specific css */
+
+.items-grid-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px, auto));
+    justify-items: center;
+    align-items: center;
+}

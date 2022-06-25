@@ -1,0 +1,59 @@
+@import url("../../../css/root.css");
+
+/* Put here any 'footer.component.js' specific css */
+
+footer {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+    padding: 0 var(--phone-horizontal-padding);
+    width: 100%;
+    height: var(--phone-footer-height);
+    background-color: var(--gray-80);
+    color: var(--font-color-footer);
+}
+
+    footer a {
+        color: var(--gray-60);
+    }
+
+    footer a:hover {
+        color: var(--gray-50);
+    }
+
+    footer a:focus {
+        color: var(--gray-40);
+    }
+
+
+
+/* ==========================
+MEDIA QUERIES
+========================== */
+
+/* Tablets ----------- */
+@media only screen and (min-width : 480px) {
+    footer {
+        padding: 0 var(--tablet-horizontal-padding);
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    footer {
+        padding: 0 var(--desktop-horizontal-padding);
+        justify-content: flex-start;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    footer {
+        padding: 0 var(--widescreen-horizontal-padding);
+        justify-content: flex-start;
+    }
+}

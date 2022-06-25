@@ -1,0 +1,145 @@
+@import url("../../../css/root.css");
+
+/* Put here any 'header.component.js' specific css */
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin: 0 0;
+    padding: 0 var(--phone-horizontal-padding);
+    width: 100%;
+    height: var(--phone-header-height);
+    background-color: var(--primary);
+}
+
+/**
+ * Can be a span or an img element (ideally a .png or .svg file).
+ * 
+ * The filter defines the color of the element, so disable
+ * it if you have more than one color in your icon
+ */
+.header-logo {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--phone-header-height) - 40%);
+    width: fit-content;
+    margin: 0 0;
+
+    /* if text */
+    white-space: nowrap;
+    font-family: Roboto-Bold;
+    font-size: 25px;
+
+    /**
+     * Defines the color of the element
+     * 
+     * go to https://codepen.io/sosuke/pen/Pjoqqp to define your specific color
+     * Credits to Barrett Sonntag
+     */
+    filter:
+        /* keep those two, because it turns the original
+        icon to black for the filter to work */
+        brightness(0) saturate(100%)
+        /* actual filter */
+        invert(100%) sepia(0%) saturate(3354%) hue-rotate(168deg) brightness(112%)       
+}
+    /*.header-logo:hover {
+        filter:
+            /* keep those two, because it turns the original
+            icon to black for the filter to work */
+            /*brightness(0) saturate(100%)
+            /* actual filter */
+            /*invert(99%) sepia(3%) saturate(7488%) hue-rotate(319deg) brightness(89%) contrast(89%);       
+    }*/
+
+.header-nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 0;
+}
+
+.header-nav-ul {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.header-nav-item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 3%;
+    min-width: fit-content;
+    white-space: nowrap;
+    margin: 0 0;
+    padding: 5px 15px;
+}
+
+.header-nav a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: var(--font-color-header);
+}
+
+    .header-nav a:hover {
+        color: var(--font-color-header-hover);
+    }
+
+    .header-nav a:focus {
+        -webkit-tap-highlight-color: transparent;
+        color: var(--font-color-header-click);
+    }
+
+/* ==========================
+MEDIA QUERIES
+========================== */
+
+/* Tablets ----------- */
+@media only screen and (min-width : 480px) {
+    header {
+        height: var(--tablet-header-height);
+        padding: 0 var(--tablet-horizontal-padding);
+    }
+    .header-logo {
+        height: calc(var(--tablet-header-height) - 40%);
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    header {
+        height: var(--desktop-header-height);
+        padding: 0 var(--desktop-horizontal-padding);
+    }
+    .header-logo {
+        height: calc(var(--desktop-header-height) - 40%);
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    header {
+        height: var(--widescreen-header-height);
+        padding: 0 var(--widescreen-horizontal-padding);
+    }
+    .header-logo {
+        height: calc(var(--widescreen-header-height) - 40%);
+    }
+}

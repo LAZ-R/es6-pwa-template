@@ -1,0 +1,41 @@
+@import url("../../../css/root.css");
+
+/* Put here any 'footer.component.js' specific css */
+
+.item-pad {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: #00000035 0 10px 20px;
+    font-family: Roboto-Bold;
+    margin: 20px 20px;
+}
+
+.item-pad:hover {
+    cursor: pointer;
+    box-shadow: #00000065 0 10px 20px;
+}
+
+.item-pad-image {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-clip: border-box;
+    background-position: center;
+    background-size: cover;
+    width: 85%;
+    min-width: 150px;
+    height: 150px;
+    margin: auto auto;
+    border-radius: 10px;
+}
+
+.item-pad-name {
+    margin: auto auto;
+}

@@ -1,0 +1,191 @@
+@import url("./fonts.css");
+
+/* ==========================
+GLOBAL VARIABLES
+========================== */
+
+:root {
+    /*----------
+        Colors
+    ----------*/
+
+    /* Primary */
+    --primary: #468076;
+    --primary-hover: #409284;
+
+    /* Secondary */
+    --secondary: #e4b8e4;
+    --secondary-hover: #d4a7d4;
+
+    /* Gray */
+    --gray-90: #191919;
+    --gray-80: #333333;
+    --gray-70: #4d4d4d;
+    --gray-60: #666666;
+    --gray-50: #808080;
+    --gray-40: #999999;
+    --gray-30: #b3b3b3;
+    --gray-20: #cccccc;
+    --gray-10: #e6e6e6;
+    
+    /* Font colors */
+    --font-color-default: var(--gray-60);
+    --font-color-links: var(--gray-70);
+
+    --font-color-header: #ffffff;
+    --font-color-header-hover: var(--gray-10);
+    --font-color-header-click: var(--gray-20);
+
+    --font-color-footer: var(--gray-70);
+
+    /* Constant colors */
+    --html-background-color: #ffffff;
+
+
+
+    /*----------
+        Sizes
+    ----------*/
+
+    /* header height */
+    --phone-header-height: 60px;
+    --tablet-header-height: 60px;
+    --desktop-header-height: 50px;
+    --widescreen-header-height: 50px;
+
+    /* footer height */
+    --phone-footer-height: 40px;
+    --tablet-footer-height: 40px;
+    --desktop-footer-height: 40px;
+    --widescreen-footer-height: 40px;
+
+    /* Horizontal Padding */
+    --phone-horizontal-padding: 5%;
+    --tablet-horizontal-padding: 7%;
+    --desktop-horizontal-padding: 10%;
+    --widescreen-horizontal-padding: 20%;
+
+    /* Button font size */
+    --phone-button-font-size: 18px;
+    --tablet-button-font-size: 16px;
+    --desktop-button-font-size: 15px;
+    --widescreen-button-font-size: 14px;
+}
+
+/* ==========================
+MAIN CONTAINERS
+========================== */
+
+html {
+    min-height: 100%;
+    background-color: var(--html-background-color);
+}
+
+body {
+    margin: 0;
+    font-family: Roboto-Regular;
+    color: var(--font-color-default);
+}
+
+/* Main container */
+main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100%;
+    width: 100%;
+    margin: 0 0;
+    margin-top: var(--phone-header-height);
+    margin-bottom: var(--phone-footer-height);
+    padding: 0 var(--phone-horizontal-padding);
+}
+
+main div {
+    width: 100%;
+}
+
+
+
+/* ==========================
+CLICKABLES
+========================== */
+
+/* Anchors */
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: var(--font-color-links);
+}
+
+    a:focus {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+/* Buttons */
+button {
+    font-family: Roboto-Medium;
+    border: none;
+    background-color: var(--gray-10);
+    padding: 8px 14px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    font-size: var(--phone-button-font-size);
+    flex-wrap: wrap;
+    color: var(--gray-80);
+}
+
+    button:hover {
+        cursor: pointer;
+        background-color: var(--gray-20);
+    }
+
+.primary-button {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+    .primary-button:hover {
+        background-color: var(--primary-hover);
+    }
+
+/* ==========================
+MEDIA QUERIES
+========================== */
+
+/* Tablets ----------- */
+@media only screen and (min-width : 480px) {
+    main {
+        margin-top: var(--tablet-header-height);
+        margin-bottom: var(--tablet-footer-height);
+        padding: 0 var(--tablet-horizontal-padding);
+    }
+    button {
+        font-size: var(--tablet-button-font-size);
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    main {
+        margin-top: var(--desktop-header-height);
+        margin-bottom: var(--desktop-footer-height);
+        padding: 0 var(--desktop-horizontal-padding);
+    }
+    button {
+        font-size: var(--desktop-button-font-size);
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    main {
+        margin-top: var(--widescreen-header-height);
+        margin-bottom: var(--widescreen-footer-height);
+        padding: 0 var(--widescreen-horizontal-padding);
+    }
+    button {
+        font-size: var(--widescreen-button-font-size);
+    }
+}

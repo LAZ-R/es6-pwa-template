@@ -1,0 +1,6 @@
+/* Import here any css file within the 'pages' folder */
+
+@import url("./index/index.style.css");
+@import url("./items/items.style.css");
+@import url("./details/details.style.css");
+@import url("./about/about.style.css");

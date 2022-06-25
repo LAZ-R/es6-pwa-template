@@ -1,0 +1,7 @@
+/* Import here any css file within the 'components' folder */
+
+@import url("./header/header.style.css");
+@import url("./footer/footer.style.css");
+
+@import url("./itemsGridContainer/itemsGridContainer.style.css");
+@import url("./itemPad/itemPad.style.css");
