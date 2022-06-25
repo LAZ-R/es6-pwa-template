@@ -35,6 +35,7 @@ header {
     white-space: nowrap;
     font-family: Roboto-Bold;
     font-size: 25px;
+    color: var(--font-color-header);
 
     /**
      * Defines the color of the element
