@@ -27,7 +27,7 @@ const renderView = () => {
     page.appendChild(document.createElement('p')).innerHTML =
         'Vanilla HTML, vanilla CSS, vanilla JS, the point here is no <b>compilation</b>, no <b>versioning problems</b>, no <b>framework specific synthax</b> to learn.<br>' +
         'Basically a POC, not gonna lie.';
-    page.appendChild(document.createElement('h4')).innerHTML =
+    page.appendChild(document.createElement('h3')).innerHTML =
         'Also'
     page.appendChild(document.createElement('p')).innerHTML =
         'Everything is here and customizable.<br>You don\'t like the way I handle my CSS ? Just change it, it\'s right there.';
