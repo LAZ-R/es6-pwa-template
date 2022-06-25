@@ -1,5 +1,3 @@
-import * as COMPONENT_HEADER from "./components/header/header.component.js";
-
 window.onload = () => {
   'use strict';
 
@@ -8,5 +6,3 @@ window.onload = () => {
              .register('../sw.js');
   }
 }
-
-COMPONENT_HEADER.render();
