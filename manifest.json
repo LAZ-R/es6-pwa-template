@@ -39,6 +39,7 @@
     }
   ],
   "lang": "en-US",
+  "orientation": "portrait",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#468076",
