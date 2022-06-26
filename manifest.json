@@ -30,12 +30,6 @@
       "src": "./images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
-    },
-    {
-      "src": "./images/maskable_iconx512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
     }
   ],
   "lang": "en-US",
